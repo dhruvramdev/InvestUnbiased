@@ -1,8 +1,39 @@
-.form-submit-button {
-	width: 20%;
-	font-weight:bold;
-	top-padding:15px;
+.subscribe{
+	background:#000;
+	text-color:#fff;
+
+
 }
+.subscribe-title{
+	text-color:#fff;
+	font-size:40px;
+}
+.subscribe-tagline{
+	font-size:20px;
+	
+}
+input[type=text] {
+    width: 60%;
+   
+    height:55px;
+    float:left;
+    background-color:#000;
+    text-color:#fff;
+    font-size:18px;
+    border-color:#fff;
+}
+		
+input[type=submit]{
+    
+    
+    height:55px;
+    width:20%;
+    font-size:25px;
+    
+    
+    
+}
+
 
 .about-us-title{
 	top-padding:100px;
