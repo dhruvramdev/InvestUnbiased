@@ -1,3 +1,19 @@
+.mission-li{
+font-size:24px;}
+.ic{
+font-size:14px;
+}
+
+#about-us .side-img{
+width:50%;
+height:50%;
+}
+.side-img{
+width:40px;
+height:40px;
+
+}
+
 /*====================================================
 [Master Stylesheet]
 
@@ -77,8 +93,6 @@ Url:              http://www.northui.com
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 
 /*Change Font-family*/
-
-
 body,h1,h2,h3,h4,h5,h6,.ft-fm-1{
     font-family: 'Montserrat', sans-serif;
 }
@@ -105,7 +119,7 @@ ul, ol{
     margin: 0;
     padding: 0;
 }
-li{ list-style: none; }
+li{display:block;}
 ul.list-inline{ margin-left: 0; }
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
@@ -133,11 +147,8 @@ a:active{
     outline: none;
     text-decoration: none;
 }
-.services-icon{
-	width:20%;
-	height:20%;
-	
-}
+
+
 
 /*Buttons*/
 .btn{
@@ -4487,7 +4498,7 @@ footer .copyright a{
 }
 .footer-logo{
     display: inline-block;
-    border-style:solid;
+    padding: 40px 18px;
     border-radius: 0 0 3px 3px;
 }
 .made-by{

@@ -1,4 +1,4 @@
-<?
+<?php 
     /* This script emails whatever is posted to it and
     * requires the form to have a hidden input named "redirect"
     *
