@@ -13,7 +13,29 @@ width:40px;
 height:40px;
 
 }
+.fa {
+color:#00aeef;
+}
 
+
+.services > h3:hover, .services > h3:focus {
+  background-color: #EF92A5;
+  text-decoration: none;
+}
+
+.mybtn{
+    background:none;
+    
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.footer > img{
+border:solid;
+border-color:#00aeef
+}
 /*====================================================
 [Master Stylesheet]
 
@@ -1763,6 +1785,8 @@ body.offcanvas .offcanvas-overlay {
     box-shadow: 0px 40px 70px 0px rgba(0, 0, 0, 0.22);
     cursor: pointer;
 }
+
+
 .features-icon{
     font-size: 36px;
     padding: 20px 28px;
@@ -1817,6 +1841,7 @@ body.offcanvas .offcanvas-overlay {
 .features-item.features-item-v2:hover .features-info p{
     color: #bfbfbf;
 }
+
 /*------ End of services  ------*/
 
 
@@ -4498,7 +4523,7 @@ footer .copyright a{
 }
 .footer-logo{
     display: inline-block;
-    padding: 40px 18px;
+   
     border-radius: 0 0 3px 3px;
 }
 .made-by{
