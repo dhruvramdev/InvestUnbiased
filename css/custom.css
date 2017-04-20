@@ -5,6 +5,40 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 ==============================================================   */
 
+.mission-li{
+font-size:24px;}
+.ic{
+font-size:14px;
+}
 
+.side-img{
+width:50%;
+height:50%;
+
+
+}
+.fa {
+color:#00aeef;
+}
+
+
+.services > h3:hover, .services > h3:focus {
+  background-color: #EF92A5;
+  text-decoration: none;
+}
+
+.mybtn{
+    background:none;
+    
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.footer > img{
+border:solid;
+border-color:#00aeef
+}
 
 
