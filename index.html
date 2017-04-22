@@ -529,11 +529,11 @@ Facebook: 		https://www.facebook.com/North-UI-1625801214386300/?fref=ts
 					<div class="col-sm-7 send-message-v2">
 						<h2 class="title m-b-40">Get in Touch</h2>
 						<p class="send-message-info">We will revert back to you shortly!</p>
-						<form action="https://formspree.io/nikhilyadav3000@gmail.com" method="post" data-toggle="modal" data-target="#emailmodal" class="contact-form m-t-60 ft-fm-2">
+						<form action="https://formspree.io/nikhilyadav3000@gmail.com" method="post"class="contact-form m-t-60 ft-fm-2">
 							<ul class="forms">
 								<li>
 									<span class="input form-group">
-										<input class="input-field" type="text" id="name" required/>
+										<input class="input-field" type="text" id="name" name="Name" required/>
 										<label class="input-label" for="name">
 											<span class="input-label-content">Your Name</span>
 										</label>
@@ -542,7 +542,7 @@ Facebook: 		https://www.facebook.com/North-UI-1625801214386300/?fref=ts
 								</li>
 								<li>
 									<span class="input form-group">
-										<input class="input-field" type="email" id="email" required/>
+										<input class="input-field" type="email" id="email" name="Email id"  required/>
 										<label class="input-label" for="email">
 											<span class="input-label-content">Email Address</span>
 										</label>
@@ -551,7 +551,7 @@ Facebook: 		https://www.facebook.com/North-UI-1625801214386300/?fref=ts
 								</li>
 								<li>
 									<span class="input form-group">
-										<input class="input-field" type="text" id="subject" required>
+										<input class="input-field" type="text" id="subject" name="Subject"  required>
 										<label class="input-label" for="subject">
 											<span class="input-label-content">Subject</span>
 										</label>
@@ -560,7 +560,7 @@ Facebook: 		https://www.facebook.com/North-UI-1625801214386300/?fref=ts
 								</li>
 								<li>
 									<span class="input input-textarea form-group">
-										<textarea rows="6" cols="30" class="input-field" id="message" required></textarea>
+										<textarea rows="6" cols="30" class="input-field" id="message" name="message" required></textarea>
 										<label class="input-label" for="message">
 											<span class="input-label-content">Message</span>
 										</label>
@@ -570,7 +570,7 @@ Facebook: 		https://www.facebook.com/North-UI-1625801214386300/?fref=ts
 							</ul>
 							<div id="msgSubmit" class="h3 text-center hidden"></div>
 							<div id="form-submit-wrapper">
-								<input type="submit" value="SUBMIT" id="form-submit" class="btn btn-lg btn-info btn-info-major"/>
+								<input type="submit" value="SUBMIT" name="Submit" id="form-submit" class="btn btn-lg btn-info btn-info-major"/>
 							</div>
 						</form>
 					</div> <!-- //col-sm-7 send-message -->
