@@ -35,11 +35,11 @@ color:#00aeef;
     overflow: hidden;
     outline:none;
 }
-
+/* 
 .footer > img{
 border:solid;
 border-color:#00aeef
-}
+} */
 
 .service-title{
 text-align:center;
@@ -47,3 +47,19 @@ font-size:40px;
 
 }
 
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+#header .logos img {
+  padding : 10px;
+}
+
+#header.sticky-header .main-nav>ul>li>a{
+    line-height: 8;
+}
