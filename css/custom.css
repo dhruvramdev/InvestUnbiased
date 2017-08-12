@@ -50,14 +50,22 @@ Overwriting Default Theme Styles for Better Hanlding Updates
   background: #FFF;
   padding: 20px;
   width: auto;
-  max-width: 500px;
+  max-width: 70%;
   margin: 20px auto;
   list-style-type: circle ;
 }
 
+@media only screen and (max-width: 600px) {
+    .white-popup {
+        max-width : 500px;
+    }
+}
+
+
 .white-popup  li {
   display: list-item;
-  margin-left: 5px
+  margin-left: 15px ;
+  text-align: justify
 }
 
 #header .logos img {
