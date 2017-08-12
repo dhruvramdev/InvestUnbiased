@@ -1,24 +1,22 @@
 /* ==============================================================
-    CUSTOM CSS
+CUSTOM CSS
 
-	Add all your Custom Styled CSS here for New Styles or
-	Overwriting Default Theme Styles for Better Hanlding Updates
+Add all your Custom Styled CSS here for New Styles or
+Overwriting Default Theme Styles for Better Hanlding Updates
 ==============================================================   */
 
 .mission-li{
-font-size:24px;}
+  font-size:24px;
+}
 .ic{
-font-size:14px;
+  font-size:14px;
 }
 
-.side-img{
-width:50%;
-height:50%;
-
-
-}
+.side-img img{
+  margin-left: 12%;
+} 
 .fa {
-color:#00aeef;
+  color:#00aeef;
 }
 
 
@@ -28,23 +26,23 @@ color:#00aeef;
 }
 
 .mybtn{
-    background:none;
-    
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
+  background:none;
+  
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
 /* 
 .footer > img{
-border:solid;
-border-color:#00aeef
+  border:solid;
+  border-color:#00aeef
 } */
 
 .service-title{
-text-align:center;
-font-size:40px;
-
+  text-align:center;
+  font-size:40px;
+  
 }
 
 .white-popup {
@@ -54,6 +52,12 @@ font-size:40px;
   width: auto;
   max-width: 500px;
   margin: 20px auto;
+  list-style-type: circle ;
+}
+
+.white-popup  li {
+  display: list-item;
+  margin-left: 5px
 }
 
 #header .logos img {
@@ -61,5 +65,13 @@ font-size:40px;
 }
 
 #header.sticky-header .main-nav>ul>li>a{
-    line-height: 8;
+  line-height: 8;
+}
+
+.modal-close {
+  color: orange 
+}
+
+.modal-close:hover {
+  color : red;
 }
