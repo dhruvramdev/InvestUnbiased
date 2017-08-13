@@ -58,6 +58,7 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 @media only screen and (max-width: 600px) {
     .white-popup {
         max-width : 500px;
+        font-size: 13px
     }
 }
 
@@ -65,8 +66,14 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 .white-popup  li {
   display: list-item;
   margin-left: 15px ;
-  text-align: justify
+  text-align: justify ;
+  font-weight: 300
 }
+
+.white-popup p {
+  font-family : Montserrat, sans-serif;
+}
+
 
 #header .logos img {
   padding : 10px;
