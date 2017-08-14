@@ -381,7 +381,7 @@
 										</a>
 										<div id="prodcut6" class="white-popup mfp-hide">
 											<div class="features-info">
-												<h3 class="title">NRI</h3>
+												<h3 class="title">NRI*</h3>
 												<p>Enroll with us. It's time you take advantage of it by investing in the right investment options with investunbiased.com</p> 
 												<p>The following facilities are being offered to NRI in addition of investment advisory.</p>
 												<uL>
@@ -654,7 +654,7 @@
 									<div class="col-sm-7 send-message-v2">
 										<h2 class="title m-b-40">Get in Touch</h2>
 										<p class="send-message-info">We will revert back to you shortly!</p>
-										<form action="form_handler.php" method="post" class="contact-form m-t-60 ft-fm-2">
+										<form id='queryform' class="contact-form m-t-60 ft-fm-2">
 											<ul class="forms">
 												<li>
 													<span class="input form-group">
@@ -693,6 +693,7 @@
 													</span>
 												</li>
 											</ul>
+											<input type="hidden" name="_cc" value="Pankaj.rateja@gmail.com" />
 											<div id="msgSubmit" class="h3 text-center hidden"></div>
 											<div id="form-submit-wrapper">
 												<input type="submit" value="SUBMIT" name="Submit" id="form-submit" class="btn btn-lg btn-info btn-info-major"/>
@@ -765,6 +766,26 @@
 								// save instance in magnificPopup variable
 								magnificPopup.close();
 							})
+						</script>
+						<script>
+							$('#queryform').submit(function(e){
+								e.preventDefault() ;
+								console.log('triggered');
+								var a = $(this).serializeArray().reduce(function(m,o){ m[o.name] = o.value; return m;}, {})
+								console.log(a);
+								$.ajax({
+									url: "https://formspree.io/pythonbrilliant@gmail.com", 
+									method: "POST",
+									data: a ,
+									dataType: "json"
+								}).done( function ( data) {
+									console.log(data);
+									if (data.success) {
+										alert('We Will Get Back to You Shortly');
+									}
+								})
+							})
+									
 						</script>
 					</body>
 					</html>
