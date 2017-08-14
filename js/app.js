@@ -228,7 +228,10 @@ jQuery(function($) {
 	//testimonial-slider-v2
 	$('.testimonial-slider-v2').flexslider({
 		animation: "slide",
-		controlNav: "thumbnails"
+		controlNav: "thumbnails" ,
+		itemMargin : '10px' ,
+		maxItems : 3 ,
+		allowOneSlide : true
 	});
 
 	/*==========  TWITTER SLIDER  ==========*/

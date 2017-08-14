@@ -61,8 +61,15 @@ Overwriting Default Theme Styles for Better Hanlding Updates
     .white-popup {
         max-width : 500px;
         font-size: 13px
-    }
+    } 
 }
+
+@media only screen and (max-width: 768px) {
+    .testimonial-slider-v2 .slides .info {
+        margin-top : 50px;
+    } 
+}
+
 
 
 .white-popup  li {
