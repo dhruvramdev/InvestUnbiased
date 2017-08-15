@@ -290,9 +290,9 @@
     right: 15px;
     width: initial;
   }
-  #header .logos .logo{
+  /* #header .logos .logo{
     max-height: 20px;
-  }
+  } */
   #header.sticky-header.box-header{
     left: 0;
     right: 0;

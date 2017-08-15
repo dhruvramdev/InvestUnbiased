@@ -6,8 +6,16 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 ==============================================================   */
 
 .mission-li{
-  font-size:24px;
+  font-size:22px;
+  font-weight: 300;
+  font-family: Roboto ;
+  /* display: list-item */
 }
+
+.mission-li li {
+  display: list-item
+}
+
 .ic{
   font-size:14px;
 }
@@ -58,16 +66,29 @@ Overwriting Default Theme Styles for Better Hanlding Updates
 }
 
 @media only screen and (max-width: 600px) {
-    .white-popup {
-        max-width : 500px;
-        font-size: 13px
-    } 
+  .white-popup {
+    max-width : 500px;
+    font-size: 13px
+  } 
+  
+  .mission-li{
+    font-size:18px;
+  }
+  
+  
+  
+  
 }
 
 @media only screen and (max-width: 768px) {
-    .testimonial-slider-v2 .slides .info {
-        margin-top : 50px;
-    } 
+  .testimonial-slider-v2 .slides .info {
+    margin-top : 50px;
+  } 
+
+  .mission-li{
+    font-size:16px;
+    padding-left : 15px ;
+  }
 }
 
 
