@@ -196,7 +196,7 @@
 										<img src="img/slider/custom2.jpg" alt="slide" class="slider-img1 zim-fadeInUp-delay">
 										<img src="img/slider/invest3-2.jpg" alt="slide" class="slider-img2 zim-fadeInUp-delay3">
 										<img src="img/slider/invest3-1.jpg" alt="slide" class="slider-img3 zim-fadeInUp-delay2">
-									
+										
 									</div> <!-- //.col-sm-6 slider-images -->
 								</div>
 							</div> <!-- //.container -->
@@ -519,7 +519,7 @@
 													<div class="about-client text-center">
 														<p class="icon"><i class="icon-comment-quote"></i></p>
 														<h3 class="name">Dr. Achint Garg</h3>
-														<!-- <p class="designation">Startupoint</p> -->
+														<p class="designation">Managing Director <br> Garg Dental Care</p>  
 													</div> <!-- //.about-client -->
 												</li>
 												<li data-thumb="img/clients/invest2.jpg">
@@ -529,7 +529,7 @@
 													<div class="about-client text-center">
 														<p class="icon"><i class="icon-comment-quote"></i></p>
 														<h3 class="name">Sarabjeet Ahluwalia</h3>
-														<!-- <p class="designation"> Synergy Enterprises</p> -->
+														<!-- <p class="designation"> Synergy Enterprises</p>  -->
 													</div> <!-- //.about-client -->
 												</li>
 												<li data-thumb="img/clients/invest3.jpg">
@@ -539,7 +539,7 @@
 													<div class="about-client text-center">
 														<p class="icon"><i class="icon-comment-quote"></i></p>
 														<h3 class="name">Utsav Kapoor</h3>
-														<!-- <p class="designation">WildVoyager</p> -->
+														<p class="designation">Exports Manager <br> Kapoor Oil Mills</p> 
 													</div> <!-- //.about-client -->
 												</li>
 												<li data-thumb="img/clients/invest4.jpeg">
@@ -549,7 +549,8 @@
 													<div class="about-client text-center">
 														<p class="icon"><i class="icon-comment-quote"></i></p>
 														<h3 class="name">Dr Puneet Chopra</h3>
-														<!-- <p class="designation">WildVoyager</p> -->
+														<!-- <h3 class="name">Dr Puneet Chopra</h3> -->
+														<p class="designation">Director <br> Denatal Care and Implant Centre</p> 
 													</div> <!-- //.about-client -->
 												</li>
 												<li data-thumb="img/clients/invest5.jpeg">
@@ -559,7 +560,7 @@
 													<div class="about-client text-center">
 														<p class="icon"><i class="icon-comment-quote"></i></p>
 														<h3 class="name">Ravent Mitroo</h3>
-														<!-- <p class="designation">WildVoyager</p> -->
+														<p class="designation">Chief Operation Officer <br> Broadway Autoworld Pvt Ltd.</p> 
 													</div> <!-- //.about-client -->
 												</li> 
 												<li data-thumb="img/clients/invest6.jpeg">
@@ -569,6 +570,8 @@
 													<div class="about-client text-center">
 														<p class="icon"><i class="icon-comment-quote"></i></p>
 														<h3 class="name">Abhishek Choudhary</h3>
+														<p class="designation">Vice Chairman <br> Institute of Management and Development</p> 
+														
 														<!-- <p class="designation">WildVoyager</p> -->
 													</div> <!-- //.about-client -->
 												</li> 
@@ -579,7 +582,7 @@
 													<div class="about-client text-center">
 														<p class="icon"><i class="icon-comment-quote"></i></p>
 														<h3 class="name">Manjush Kataria</h3>
-														<!-- <p class="designation">WildVoyager</p> -->
+														<p class="designation">Products Manager <br> Jyoti Electro System Pvt Ltd.</p> 
 													</div> <!-- //.about-client -->
 												</li> 
 											</ul>
@@ -620,7 +623,7 @@
 											
 											
 											
-											 <li>To give peace of mind to our clients by wealth management </li> 
+											<li>To give peace of mind to our clients by wealth management </li> 
 											<li>To provide smart investment and financial decisions</li>
 											<li>Our integrity, trust, personalised services are for managing financial affairs of our clients in an effective and efficient manner. </li> 
 										</ul>
@@ -690,8 +693,39 @@
 													</span>
 												</li>
 												<li>
+													<span class="input form-group">
+														<label for="Product" style="font-weight : 300;">
+															<span class="input-label-content">Interested in </span>
+														</label>
+														<select class="form-control" id='Product' name="Products" required>
+															<option value="">Select One</option>
+															<option>Mutual Funds</option>
+															<option>SIP</option>
+															<option>ULIP</option>
+															<option>Term Plan</option>
+															<option>NFO</option>
+															<option>IPO</option>
+															<option>Loan</option>
+															<option>Other - Please Mention</option>
+														</select>
+														
+														<span class="help-block with-errors"></span>
+													</span>
+												</li>
+												<li>
+													<span class="form-group" style="float:left">
+														<input  type="checkbox" id="Indian" name="Indian" style="float:left; width : auto" checked>
+														<label for="Indian" style="float : left ; font-weight : 300 ; padding-left : 10px">
+															<span class="input-label-content">Are you an Indian Citizen ?</span>
+														</label>
+														
+														
+														<span class="help-block with-errors"></span>
+													</span>
+												</li>
+												<li>
 													<span class="input input-textarea form-group">
-														<textarea rows="6" cols="30" class="input-field" id="message" name="message" required></textarea>
+														<textarea rows="6" cols="30" class="input-field" id="message" name="message" ></textarea>
 														<label class="input-label" for="message">
 															<span class="input-label-content">Message</span>
 														</label>
@@ -779,17 +813,17 @@
 								console.log('triggered');
 								var a = $(this).serializeArray().reduce(function(m,o){ m[o.name] = o.value; return m;}, {})
 								console.log(a);
-								$.ajax({
-									url: "https://formspree.io/pythonbrilliant@gmail.com", 
-									method: "POST",
-									data: a ,
-									dataType: "json"
-								}).done( function ( data) {
-									console.log(data);
-									if (data.success) {
-										alert('We Will Get Back to You Shortly');
-									}
-								})
+								// $.ajax({
+								// 	url: "https://formspree.io/pythonbrilliant@gmail.com", 
+								// 	method: "POST",
+								// 	data: a ,
+								// 	dataType: "json"
+								// }).done( function ( data) {
+								// 	console.log(data);
+								// 	if (data.success) {
+								// 		alert('We Will Get Back to You Shortly');
+								// 	}
+								// })
 							})
 							
 						</script>
