@@ -62,7 +62,7 @@ Overwriting Default Theme Styles for Better Hanlding Updates
   margin: 20px auto;
   list-style-type: circle ;
   font-weight: 400 ; 
-  text-align: justify ;
+  /* text-align: justify ; */
 }
 
 @media only screen and (max-width: 600px) {
